@@ -11,3 +11,79 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.create-area {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "tools grid grid" "colors grid grid";
+}
+
+.design.area {
+  display: flex;
+  justify-content: center;
+  grid-area: grid;
+}
+
+.grid {
+  display: flex;
+  width: 280px;
+  height: auto;
+  flex-flow: wrap;
+}
+
+.cell {
+  width: 24px;
+  height: 24px;
+  margin: 2px;
+}
+
+.row {
+  display: flex;
+}
+
+.pick.colors {
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-flow: wrap;
+  grid-area: colors;
+}
+
+.color {
+  width: 24px;
+  height: 24px;
+  margin: 2px;
+  border: solid black 1px
+}
+
+.tools {
+  grid-area: tools;
+}
+
+.design-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+  margin: 10px;
+}
+
+.design-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 10px;
+}
+
+.design-image {
+  display: flex;
+  width: 280px;
+  height: auto;
+  flex-flow: wrap;
+}
+
+
