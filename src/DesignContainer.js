@@ -9,7 +9,8 @@ class DesignContainer extends React.Component {
 
   render(){
     return (
-      <div>
+      <div className="design-container">
+        
         {this.renderDesignItem()}
       </div>
     )

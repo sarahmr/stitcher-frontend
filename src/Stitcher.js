@@ -5,6 +5,7 @@ import CreateDesign from './CreateDesign'
 import { Route, Switch } from 'react-router-dom'
 import DesignData from './data.json'
 import UserProjectsContainer from './UserProjectsContainer'
+import ProjectDetail from './ProjectDetail'
 
 
 class Stitcher extends React.Component {
@@ -24,6 +25,9 @@ class Stitcher extends React.Component {
         <div>
           <NavBar />
           <Switch>
+            <Route path="/projects/:id">
+              <ProjectDetail design={this.state.designs[0]} />
+            </Route>
             <Route path="/create">
               <CreateDesign />
             </Route>
