@@ -72,12 +72,13 @@ class ProjectDetail extends React.Component {
             </div>
           ))}
         </div>
-        {this.props.user ? <div className="progress">
+        { this.props.user ? 
+          <div className="progress">
           <Progress 
             cells={this.state.design.cells} 
             completedCells={this.state.cellsCompleted} 
           />
-        </div> : null}
+          </div> : null }
         <div className="supplies">
           <Supplies />
         </div>

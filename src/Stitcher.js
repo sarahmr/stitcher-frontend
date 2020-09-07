@@ -7,6 +7,7 @@ import DesignData from './data.json'
 import UserProjectsContainer from './UserProjectsContainer'
 import ProjectDetail from './ProjectDetail'
 import SignIn from './SignIn'
+import Register from './Register'
 
 
 class Stitcher extends React.Component {
@@ -35,13 +36,20 @@ class Stitcher extends React.Component {
               <CreateDesign />
             </Route>
             <Route path="/users/:id">
-              <UserProjectsContainer designs={this.state.designs} />
+              <UserProjectsContainer
+                user={this.state.user} 
+                designs={this.state.designs} />
             </Route>
             <Route path="/login">
               <SignIn />
             </Route>
+            <Route path="/register">
+              <Register />
+            </Route>
             <Route path="/">
-              <DesignContainer designs={this.state.designs} />
+              <DesignContainer
+                user={this.state.user} 
+                designs={this.state.designs} />
             </Route>
           </Switch>
         </div>
