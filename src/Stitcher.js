@@ -6,12 +6,14 @@ import { Route, Switch } from 'react-router-dom'
 import DesignData from './data.json'
 import UserProjectsContainer from './UserProjectsContainer'
 import ProjectDetail from './ProjectDetail'
+import SignIn from './SignIn'
 
 
 class Stitcher extends React.Component {
 
   state = {
-    designs: []
+    designs: [],
+    user: null
   }
 
   componentDidMount(){
@@ -25,14 +27,18 @@ class Stitcher extends React.Component {
         <div>
           <NavBar />
           <Switch>
-            <Route path="/projects/:id">
-              <ProjectDetail design={this.state.designs[0]} />
-            </Route>
+            <Route path="/designs/:id" render={routeProps => {
+              return <ProjectDetail user={this.state.user} designs={this.state.designs} match={routeProps.match} />
+            }}
+            />
             <Route path="/create">
               <CreateDesign />
             </Route>
-            <Route path="/user/:id">
+            <Route path="/users/:id">
               <UserProjectsContainer designs={this.state.designs} />
+            </Route>
+            <Route path="/login">
+              <SignIn />
             </Route>
             <Route path="/">
               <DesignContainer designs={this.state.designs} />

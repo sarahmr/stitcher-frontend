@@ -1,10 +1,10 @@
 import React from "react"
-import Project from './Project'
+import DesignItem from './DesignItem'
 
 class UserProjectsContainer extends React.Component {
 
   renderProjects = () => {
-    return this.props.designs.map(design => <Project key={design.id} design={design} />)
+    return this.props.designs.map(design => <DesignItem key={design.id} design={design} />)
   }
 
   render(){
