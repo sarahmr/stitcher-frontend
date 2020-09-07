@@ -36,6 +36,7 @@ code {
   width: 280px;
   height: auto;
   flex-flow: wrap;
+  background: lightgrey;
 }
 
 .cell {
@@ -89,6 +90,7 @@ code {
   height: auto;
   flex-flow: wrap;
   grid-area: design-image;
+  background: lightgrey;
 }
 
 .project-details {

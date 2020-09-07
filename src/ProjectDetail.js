@@ -5,7 +5,6 @@ import Supplies from './Supplies'
 class ProjectDetail extends React.Component {
 
   state = {
-    design: null,
     cellsCompleted: [],
     collecting: false
   }
@@ -41,18 +40,11 @@ class ProjectDetail extends React.Component {
     this.state.cellsCompleted.map(cell => cell["symbol"] = "X")
   }
 
-  componentDidMount(){
-    let id = this.props.match.params.id
-    let design = this.props.designs.find(design => design.id === Number(id))
-    console.log("here")
-    this.setState({ design })
-  }
-
   render(){
-    if (!this.state.design) {
+    if (!this.props.design) {
       return null
     } 
-    let { title, user_id } = this.state.design
+    let { title, user_id } = this.props.design
     return (
       <div className="project-details"> 
         <div className="design-info">
@@ -60,7 +52,7 @@ class ProjectDetail extends React.Component {
           <p>Created by: {user_id}</p>
         </div>
         <div className="design-image">
-          {this.state.design.cells.map(cellArr => cellArr.map(cell => 
+          {this.props.design.cells.map(cellArr => cellArr.map(cell => 
             <div 
               className="cell" 
               style={{ backgroundColor: cell.color}}
@@ -72,12 +64,12 @@ class ProjectDetail extends React.Component {
             </div>
           ))}
         </div>
-        {this.props.user ? <div className="progress">
+        <div className="progress">
           <Progress 
-            cells={this.state.design.cells} 
+            cells={this.props.design.cells} 
             completedCells={this.state.cellsCompleted} 
           />
-        </div> : null}
+        </div>
         <div className="supplies">
           <Supplies />
         </div>
