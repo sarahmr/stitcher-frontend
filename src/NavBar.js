@@ -15,7 +15,9 @@ class NavBar extends React.Component {
           <NavLink to="/create">
             <button>Create a Design</button>
           </NavLink>
-          <button>Sign In</button>
+          <NavLink to="/login">
+            <button>Sign In</button>
+          </NavLink>
         </div>
       </header>
     )
