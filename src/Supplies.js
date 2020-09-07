@@ -2,7 +2,9 @@ import React from 'react'
 
 class Supplies extends React.Component {
   render(){
-    return null
+    return (
+      <h2>Supplies Here</h2>
+    )
   }
 }
 
