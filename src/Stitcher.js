@@ -2,7 +2,7 @@ import React from 'react'
 import NavBar from './NavBar'
 import DesignContainer from './DesignContainer'
 import CreateDesign from './CreateDesign'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom'
 import DesignData from './data.json'
 import UserProjectsContainer from './UserProjectsContainer'
 import ProjectDetail from './ProjectDetail'
@@ -14,13 +14,39 @@ class Stitcher extends React.Component {
 
   state = {
     designs: [],
-    user: null
+    user: "Paul"
   }
 
   componentDidMount(){
     this.setState({
       designs: DesignData.designs
     })
+  }
+
+  createNewDesign = (designCells, title) => {
+    let newDesign = {
+      title: title,
+      cells: designCells
+    }
+    this.setState({
+      designs: [...this.state.designs, newDesign]
+    })
+  }
+
+  handleUserDisplay = (routerProps) => {
+    if (this.state.user){
+      return (
+
+        <UserProjectsContainer
+                  user={this.state.user} 
+                  designs={this.state.designs} />
+      )
+    } else {
+      return (
+        <Redirect to="/login" />
+      )
+    }
+    // else redirect to sign in, redirect with redirect component
   }
 
   render(){
@@ -33,13 +59,12 @@ class Stitcher extends React.Component {
             }}
             />
             <Route path="/create">
-              <CreateDesign />
+              <CreateDesign createNewDesign={this.createNewDesign} />
             </Route>
-            <Route path="/users/:id">
-              <UserProjectsContainer
+            <Route path="/users/:id" render={this.handleUserDisplay}/>
+              {/* <UserProjectsContainer
                 user={this.state.user} 
-                designs={this.state.designs} />
-            </Route>
+                designs={this.state.designs} /> */}
             <Route path="/login">
               <SignIn />
             </Route>

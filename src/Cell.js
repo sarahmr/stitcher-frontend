@@ -4,17 +4,17 @@ class Cell extends React.Component {
 
   startGrab = () => {
     this.props.changeCollecting()
-    this.props.updateCellCollectionColor(this.props.cell)
+    this.props.updateCellCollectionColor(this.props.x, this.props.y)
   }
 
   grabbing = () => {
     if (this.props.collecting === true) {
-      this.props.updateCellCollectionColor(this.props.cell)
+      this.props.updateCellCollectionColor(this.props.x, this.props.y)
     }
   }
 
   endGrab = () => {
-    this.props.updateCellCollectionColor(this.props.cell)
+    this.props.updateCellCollectionColor(this.props.x, this.props.y)
     this.props.changeCollecting()
   }
 
@@ -26,7 +26,6 @@ class Cell extends React.Component {
       onMouseOver={this.grabbing}
       onMouseUp={this.endGrab}
       >
-        {this.props.cell.symbol}
       </div>
     )
   }

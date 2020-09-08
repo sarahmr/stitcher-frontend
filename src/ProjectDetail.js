@@ -7,23 +7,27 @@ class ProjectDetail extends React.Component {
   state = {
     design: null,
     cellsCompleted: [],
-    collecting: false
+    collecting: false,
   }
 
   mouseDown = (cell) => {
-    this.updateCollecting()
-    this.addToCollection(cell)
+    if (this.props.user) {
+      this.updateCollecting()
+      this.addToCollection(cell)
+    }
   }
 
   mouseOver = (cell) => {
-    if (this.state.collecting === true) {
+    if (this.state.collecting === true && this.props.user) {
       this.addToCollection(cell)
     }
   }
 
   mouseUp = (cell) => {
-    this.updateCollecting()
-    this.addToCollection(cell)
+    if (this.props.user) {
+      this.updateCollecting()
+      this.addToCollection(cell)
+    }
   }
 
   updateCollecting = () => {
@@ -38,13 +42,12 @@ class ProjectDetail extends React.Component {
         cellsCompleted: [...this.state.cellsCompleted, cell]
       })
     }
-    this.state.cellsCompleted.map(cell => cell["symbol"] = "X")
+    this.state.cellsCompleted.map(cell => cell["opacity"] = .3)
   }
 
   componentDidMount(){
     let id = this.props.match.params.id
     let design = this.props.designs.find(design => design.id === Number(id))
-    console.log("here")
     this.setState({ design })
   }
 
@@ -63,7 +66,7 @@ class ProjectDetail extends React.Component {
           {this.state.design.cells.map(cellArr => cellArr.map(cell => 
             <div 
               className="cell" 
-              style={{ backgroundColor: cell.color}}
+              style={{ backgroundColor: cell.color, opacity: cell.opacity }}
               onMouseDown={() => this.mouseDown(cell)}
               onMouseOver={() => this.mouseOver(cell)}
               onMouseUp={() => this.mouseUp(cell)}
@@ -77,6 +80,7 @@ class ProjectDetail extends React.Component {
           <Progress 
             cells={this.state.design.cells} 
             completedCells={this.state.cellsCompleted} 
+            percentage={this.state.percentage}
           />
           </div> : null }
         <div className="supplies">

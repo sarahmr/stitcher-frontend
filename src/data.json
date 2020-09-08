@@ -1,424 +1,372 @@
 {
+  "supplies": 
+  {
+    "#FF0000": {
+      "item": "DMC 347"
+    }, 
+    "#FF007F": {
+      "item": "DMC 3801"
+    },
+    "#32CD32": {
+      "item": "DMC 701"
+    },
+    "0A5C23": {
+      "item": "DMC 319"
+    },
+    "#87CEFA": {
+      "item": "DMC 157"
+    },
+    "#1E90FF": {
+      "item": "DMC 995"
+    },
+    "#8A2BE2": {
+      "item": "DMC 333"
+    },
+    "#8B4513": {
+      "item": "DMC 3857"
+    },
+    "#CD853F": {
+      "item": "DMC 436"
+    },
+    "#FFFF00": {
+      "item": "DMC 444"
+    },
+    "#FF8C00": {
+      "item": "DMC 740"
+    },
+    "#000000": {
+      "item": "DMC 310"
+    },
+    "#FFFFFF": {
+      "item": "DMC BLANC"
+    },
+    "#696969": {
+      "item": "DMC 414"
+    },
+    "#D3A2F9": {
+      "item": "DMC 210"
+    }
+  },
   "cells": 
   [
     [
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6"
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6"
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6"
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }
     ], 
     [
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }
     ],
     [ 
       {
-      "color": "#FDF5E6", 
-      "symbol": ""
+      "color": "#FDF5E6"
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }
     ],
     [
       {
-      "color": "#FDF5E6", 
-      "symbol": ""
+      "color": "#FDF5E6"
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }
     ],
     [ 
       {
-      "color": "#FDF5E6", 
-      "symbol": ""
+      "color": "#FDF5E6"
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }
     ],
     [
       {
-      "color": "#FDF5E6", 
-      "symbol": ""
+      "color": "#FDF5E6"
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }
     ],
     [ 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }
     ],
     [ 
       {
-      "color": "#FDF5E6", 
-      "symbol": ""
+      "color": "#FDF5E6"
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }
     ],
     [
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }
     ],
     [
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }, 
       {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6" 
       }
     ]
   ],
@@ -456,422 +404,322 @@
       "cells": [
         [
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }
       ], 
       [
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }
       ],
       [ 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }
       ],
       [
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }
       ],
       [ 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }
       ],
       [
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }
       ],
       [ 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }
       ],
       [ 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }
       ],
       [
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }
       ],
       [
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#FFFF00", 
-          "symbol": ""
+          "color": "#FFFF00"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }, 
         {
-          "color": "#0000FF", 
-          "symbol": ""
+          "color": "#0000FF"
         }
       ]
     ]
@@ -883,422 +731,322 @@
       "cells": [
         [
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ], 
       [
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [ 
         {
-        "color": "#FDF5E6", 
-        "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [
         {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [ 
         {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [
         {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [ 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [ 
         {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ]
     ]
@@ -1310,422 +1058,322 @@
       "cells": [
         [
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ], 
       [
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [ 
         {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [
         {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [ 
         {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [
         {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [ 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [ 
         {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ]
     ]
@@ -1737,422 +1385,322 @@
       "cells": [
         [
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ], 
       [
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [ 
         {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [
         {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [ 
         {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [
         {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [ 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [ 
         {
-        "color": "#FDF5E6", 
-        "symbol": ""
+        "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ],
       [
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }, 
         {
-          "color": "#FDF5E6", 
-          "symbol": ""
+          "color": "#FDF5E6"
         }
       ]
     ]

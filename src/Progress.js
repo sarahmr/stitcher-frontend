@@ -3,7 +3,8 @@ import React from 'react'
 class Progress extends React.Component {
 
   state = {
-    totalCells: 0
+    totalCells: 0,
+    percentage: 0
   }
 
   componentDidMount(){
