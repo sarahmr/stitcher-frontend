@@ -6,7 +6,7 @@ class NavBar extends React.Component {
     return (
       <header className="navbar">
         <div>
-          <h2>Stitcher</h2>
+          <h2 className="stitcher-header">Stitcher</h2>
         </div>
         <div>
           <NavLink to="/">

@@ -187,7 +187,7 @@ class ProjectDetail extends React.Component {
           ))}
         </div>
         <div className="supplies">
-          <h3>Embroidery Thread Supplies:</h3>
+          <h2>Embroidery Thread Supplies:</h2>
           <ul>
             {this.displaySupplies()}
           </ul>
