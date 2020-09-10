@@ -8,27 +8,27 @@ class NavBar extends React.Component {
         <div>
           <h2 className="stitcher-header">Stitcher</h2>
         </div>
-        <div>
+        <div >
           <NavLink to="/">
-            <button>Designs</button>
+            <button className="nav-button">Designs</button>
           </NavLink>
           { this.props.user ? 
             <>
             <NavLink to="/create">
-              <button>Create a Design</button>
+              <button className="nav-button">Create a Design</button>
             </NavLink>
             <NavLink to={`/users/${this.props.user.username}`}>
-              <button>Your Projects</button>
+              <button className="nav-button">Your Projects</button>
             </NavLink>
-              <button onClick={this.props.handleLogout}>Sign Out</button>
+              <button className="nav-button" onClick={this.props.handleLogout}>Sign Out</button>
             </>
           :
             <>
             <NavLink to="/login">
-              <button>Sign In</button>
+              <button className="nav-button">Sign In</button>
             </NavLink>
             <NavLink to="/register">
-              <button>Register</button>
+              <button className="nav-button">Register</button>
             </NavLink>
             </>
           }
