@@ -61,13 +61,16 @@ class CreateDesign extends React.Component {
   render(){
     return (
       <div className="create-area">
-        <form onSubmit={this.handleSubmit}>
+        <form className="create-form" onSubmit={this.handleSubmit}>
+          <h2>Create Your Design</h2>
+          <div>
           <label>Title:</label>
-          <input 
-            onChange={this.handleTitle} 
-            name="title" 
-            value={this.state.title}
-          />
+            <input 
+              onChange={this.handleTitle} 
+              name="title" 
+              value={this.state.title}
+            />
+          </div>
           <button>Submit Design</button>
         </form>
         <DesignArea 
