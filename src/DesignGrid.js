@@ -7,14 +7,6 @@ class DesignGrid extends React.Component {
     collecting: false,
   }
 
-  // componentDidUpdate(prevProps){
-  //   if (this.props.selectedColor !== prevProps.selectedColor) {
-  //     this.setState({
-  //       cellsToChange: []
-  //     })
-  //   }
-  // }
-
   changeCollecting = () => {
     this.setState( prevState => ({
       collecting: !prevState.collecting
@@ -27,11 +19,12 @@ class DesignGrid extends React.Component {
         {this.props.cells.map((cellRow, x) => 
           cellRow.map((cell, y) => 
             <Cell
+              key={(x + y)}
               cell={cell} 
               // changeCellColor={this.changeCellColor} 
               collecting={this.state.collecting} 
               changeCollecting={this.changeCollecting} 
-              updateCellCollectionColor={this.props.updateCellCollectionColor}
+              addToCollection={this.props.updateCellCollectionColor}
               x={x}
               y={y}
             />

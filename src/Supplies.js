@@ -3,7 +3,7 @@ import React from 'react'
 class Supplies extends React.Component {
   render(){
     return (
-      <h2>Supplies Here</h2>
+      <li>{this.props.supply.item}</li>
     )
   }
 }

@@ -4,32 +4,6 @@ import DesignGrid from './DesignGrid'
 
 class DesignArea extends React.Component {
 
-  // state = {
-  //   cells: []
-  // }
-
-  // componentDidMount(){
-  //   Data.cells.forEach(cellArr => cellArr.forEach(cell => cell.color = "#FDF5E6"))
-
-  //   this.setState({
-  //     cells: Data.cells
-  //   })
-  // }
-
-  // updateCellCollectionColor = (cellX, cellY) => {
-  //   let newCells = this.state.cells.map((cellArr, x) => cellArr.map((cell, y) => {
-  //     if ( x === cellX && y === cellY) {
-  //       let newCell = {...cell}
-  //       newCell.color = this.props.selectedColor
-  //       return newCell
-  //     } return cell
-  //   }))
-
-  //   this.setState({
-  //     cells: newCells
-  //   })
-  // }
-
   render(){
     return (
       <div className="design area">

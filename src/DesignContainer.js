@@ -5,7 +5,7 @@ class DesignContainer extends React.Component {
 
   renderDesignItem = () => {
     return this.props.designs.map(design =>
-      <DesignItem key={design.id} design={design} />
+      <DesignItem key={design.id} design={design} user={this.props.user} />
     )
   }
 

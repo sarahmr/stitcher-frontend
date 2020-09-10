@@ -13,7 +13,7 @@ class CreateDesign extends React.Component {
   }
 
   componentDidMount(){
-    Data.cells.forEach(cellArr => cellArr.forEach(cell => cell.color = "#FDF5E6"))
+    Data.cells.forEach(cellArr => cellArr.forEach(cell => cell = "#FDF5E6"))
 
     this.setState({
       cells: Data.cells
@@ -48,8 +48,7 @@ class CreateDesign extends React.Component {
   updateCellCollectionColor = (cellX, cellY) => {
     let newCells = this.state.cells.map((cellArr, x) => cellArr.map((cell, y) => {
       if ( x === cellX && y === cellY) {
-        let newCell = {...cell}
-        newCell.color = this.state.selectedColor
+        let newCell = this.state.selectedColor
         return newCell
       } return cell
     }))
@@ -58,10 +57,6 @@ class CreateDesign extends React.Component {
       cells: newCells
     })
   }
-
-  // cellsFromDesign = (cells) => {
-  //   return cells
-  // }
 
   render(){
     return (
@@ -77,7 +72,6 @@ class CreateDesign extends React.Component {
         </form>
         <DesignArea 
           selectedColor={this.state.selectedColor} 
-          // cellsFromDesign={this.cellsFromDesign} 
           cells={this.state.cells}
           updateCellCollectionColor={this.updateCellCollectionColor}
         />
