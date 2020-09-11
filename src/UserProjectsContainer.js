@@ -4,7 +4,8 @@ import DesignItem from './DesignItem'
 class UserProjectsContainer extends React.Component {
 
   state = {
-    projects: []
+    projects: [],
+    fetched: false
   }
 
   componentDidMount(){
@@ -16,21 +17,21 @@ class UserProjectsContainer extends React.Component {
     })
     .then(res => res.json())
     .then((projects) => {
-      this.setState({ projects })
+      this.setState({ projects, fetched: true })
     })
   }
 
   renderProjects = () => {
-    // if (this.state.projects.length === 0) {
-    //   return (
-    //     <h3>It looks like you haven't started working on any projects! You can add to this list by selected "Add to Your Projects" inside any design on the main page.</h3>
-    //   )
-    // } else {
+    if (this.state.fetched && this.state.projects.length === 0) {
+      return (
+        <h3>It looks like you haven't started working on any projects! You can add to this list by selected "Add to Your Projects" inside any design on the main page.</h3>
+      )
+    } else {
       return this.state.projects.map(design => { 
         return (
         <DesignItem key={design.id} design={design.design} user={this.props.user} />
       )})
-    // }
+    }
   }
 
   render(){

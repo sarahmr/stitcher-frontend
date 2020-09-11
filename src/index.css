@@ -17,6 +17,8 @@ button {
   font-family: 'Didact Gothic', sans-serif;
   font-size: 15px;
   border-radius: 10px;
+  margin: 5px;
+  width: fit-content;
 }
 
 button:hover {
@@ -29,7 +31,7 @@ button:focus {
 }
 
 button.nav-button {
-  margin: 5px;
+  /* margin: 5px; */
 }
 
 h2 {
@@ -126,6 +128,7 @@ h2 {
   grid-area: form;
   justify-self: center;
   align-self: center;
+  align-items: center;
 }
 
 .create-form h2 {
@@ -228,5 +231,10 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.details-buttons {
+  display: flex;
   flex-direction: column;
 }

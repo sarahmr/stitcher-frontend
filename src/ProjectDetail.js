@@ -41,7 +41,6 @@ class ProjectDetail extends React.Component {
     .then((design) => {
       this.setState({ design })
     })
-      // work on clearing it in unmount
     this.interval = setInterval(() => {
       if (this.state.project_id) {
       fetch(`http://localhost:3001/projects/${this.state.project_id}`, {
@@ -60,17 +59,11 @@ class ProjectDetail extends React.Component {
     }}, 5000)
   }
 
-  changeCollecting = () => {
-    this.setState(prevState => ({
-      collecting: !prevState.collecting
-    }))
-  }
-
   addToCollection = (cellX, cellY) => {
 
     let newCells = this.state.cellsCompleted.map((cellArr, x) => cellArr.map((cell, y) => {
       if (x === cellX && y === cellY){
-        let newCell = true
+        let newCell = !cell
         return newCell
       } return cell
     }))
@@ -143,9 +136,34 @@ class ProjectDetail extends React.Component {
   displaySupplies = () => {
     let suppliesList = []
     let design = this.state.design
-    design.cells.flat().forEach(color => { if (!suppliesList.includes(color)) { suppliesList.push(color) }})
+
+    design.cells.flat().forEach(color => { 
+      if ( color === "#FDF5E6") {
+        
+      } else if (!suppliesList.includes(color)) { 
+        suppliesList.push(color) 
+      }
+    })
 
     return suppliesList.map(supply => <Supplies key={supply} supply={Data.supplies[supply]} />)
+  }
+
+  handleMouseDown = () => {
+    this.setState({
+        collecting: true
+    })
+  }
+
+  handleMouseUp = () => {
+    this.setState({
+      collecting: false
+    })
+  }
+
+  handleMouseLeave = () => {
+    this.setState({
+      collecting: false
+    })
   }
 
   render(){
@@ -158,14 +176,16 @@ class ProjectDetail extends React.Component {
         <div className="design-info">
           <h2>{title}</h2>
           <p>Created by: {this.state.design.user.name}</p>
-          { this.state.cellsCompleted.length > 0 ? <button onClick={this.handleDeleteProject}>Delete Project</button> : null }
-          { this.props.user && this.props.user.id === this.state.design.user.id ? 
-            <button onClick={this.handleDeleteDesign}>Delete Design</button>
-          : null}
-          { this.props.user && !this.state.cellsCompleted.length > 0 ? 
-            <button onClick={this.handleAddProject}>Add to Your Projects</button> : null }
+          <div className="details-buttons">
+            { this.state.cellsCompleted.length > 0 ? <button onClick={this.handleDeleteProject}>Delete Project</button> : null }
+            { this.props.user && this.props.user.id === this.state.design.user.id ? 
+              <button onClick={this.handleDeleteDesign}>Delete Design</button>
+            : null}
+            { this.props.user && !this.state.cellsCompleted.length > 0 ? 
+              <button onClick={this.handleAddProject}>Add to Your Projects</button> : null }
+          </div>
         </div>
-        <div className="design-image">
+        <div className="design-image" onMouseDown={this.handleMouseDown} onMouseUp={this.handleMouseUp} onMouseLeave={this.handleMouseLeave}>
           {this.state.design.cells.map((cellArr, x) => cellArr.map((cell, y) => {
             let opacity = 1
             if (this.state.cellsCompleted.length > 0 && this.state.cellsCompleted[x][y] === true ){
