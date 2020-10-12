@@ -5,3 +5,5 @@ Stitcher is an app made for cross stitch. Users can create their own designs and
 Backend: https://github.com/sarahmr/stitcher-backend
 
 DEMO:
+
+[![Stitcher Demo Video](http://img.youtube.com/vi/7DiEqGG_5jo/0.jpg)](http://www.youtube.com/watch?v=7DiEqGG_5jo)
