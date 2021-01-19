@@ -1,16 +1,14 @@
 import React from 'react'
 
-class Color extends React.Component {
-  render(){
-    return (
-      <button 
-        className="color"
-        style={{ backgroundColor: this.props.color }}
-        onClick={() => this.props.selectAColor(this.props.color)}
-      >
-      </button>
-    )
-  }
+function Color(props) {
+  return (
+    <button 
+      className="color"
+      style={{ backgroundColor: props.color }}
+      onClick={() => props.selectAColor(props.color)}
+    >
+    </button>
+  )
 }
 
 export default Color

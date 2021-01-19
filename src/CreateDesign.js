@@ -1,87 +1,66 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import DesignArea from './DesignArea'
 import Colors from './Colors'
 import Data from './data.json'
 
-class CreateDesign extends React.Component {
+function CreateDesign(props) {
+  let [cells, addCells] = useState([])
 
-  state = {
-    cells: [],
-    selectedColor: '#FDF5E6',
-    // finalColors: [],
-    title: ''
-  }
-
-  componentDidMount(){
+  useEffect(() => {
     Data.cells.forEach(cellArr => cellArr.forEach(cell => cell = "#FDF5E6"))
 
-    this.setState({
-      cells: Data.cells
-    })
+    addCells(Data.cells)
+  }, [])
+
+  let [selectedColor, changeSelectedColor] = useState("#FDF5E6")
+
+  let [title, changeTitle] = useState("")
+
+  const colors = ["#FF0000", "#FF007F", "#32CD32", "#0A5C23", "#87CEFA", "#1E90FF", "#8A2BE2", "#8B4513", "#CD853F", "#FFFF00", "#FF8C00", "#000000", "#FFFFFF", "#696969", "#D3A2F9"]
+
+  let selectAColor = (colorChoice) => {
+    changeSelectedColor(colorChoice)
   }
 
-  colors = ["#FF0000", "#FF007F", "#32CD32", "#0A5C23", "#87CEFA", "#1E90FF", "#8A2BE2", "#8B4513", "#CD853F", "#FFFF00", "#FF8C00", "#000000", "#FFFFFF", "#696969", "#D3A2F9"]
-
-  selectAColor = (selectedColor) => {
-    this.setState({ 
-        selectedColor: selectedColor,
-        // finalColors: [...this.state.finalColors, selectedColor]
-     })
-  }
-
-  handleTitle = (event) => {
-    this.setState({ 
-      title: event.target.value
-     })
-  }
-
-  handleSubmit = (event) => {
+  let handleSubmit = (event) => {
     event.preventDefault()
     
-    this.props.createNewDesign(this.state.cells, this.state.title)
-
-    this.setState({
-      title: ""
-    })
+    props.createNewDesign(cells, title)
   }
 
-  updateCellCollectionColor = (cellX, cellY) => {
-    let newCells = this.state.cells.map((cellArr, x) => cellArr.map((cell, y) => {
+  let updateCellCollectionColor = (cellX, cellY) => {
+    let newCells = cells.map((cellArr, x) => cellArr.map((cell, y) => {
       if ( x === cellX && y === cellY) {
-        let newCell = this.state.selectedColor
+        let newCell = selectedColor
         return newCell
       } return cell
     }))
 
-    this.setState({
-      cells: newCells
-    })
+    addCells(newCells)
   }
 
-  render(){
-    return (
-      <div className="create-area">
-        <form className="create-form" onSubmit={this.handleSubmit}>
-          <h2>Create Your Design</h2>
-          <div>
-          <label>Title:</label>
-            <input 
-              onChange={this.handleTitle} 
-              name="title" 
-              value={this.state.title}
-            />
-          </div>
-          <button>Submit Design</button>
-        </form>
-        <DesignArea 
-          selectedColor={this.state.selectedColor} 
-          cells={this.state.cells}
-          updateCellCollectionColor={this.updateCellCollectionColor}
-        />
-        <Colors selectAColor={this.selectAColor} colors={this.colors} />
-      </div>
-    )
-  }
+  return (
+    <div className="create-area">
+      <form className="create-form" onSubmit={handleSubmit}>
+        <h2>Create Your Design</h2>
+        <div>
+        <label>Title:</label>
+          <input 
+            onChange={(evt) => changeTitle(evt.target.value)} 
+            name="title" 
+            value={title}
+          />
+        </div>
+        <button>Submit Design</button>
+      </form>
+      <DesignArea 
+        selectedColor={selectedColor} 
+        cells={cells}
+        updateCellCollectionColor={updateCellCollectionColor}
+      />
+      <Colors selectAColor={selectAColor} colors={colors} />
+    </div>
+  )
 }
 
 export default CreateDesign

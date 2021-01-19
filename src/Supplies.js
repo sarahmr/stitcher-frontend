@@ -1,11 +1,9 @@
 import React from 'react'
 
-class Supplies extends React.Component {
-  render(){
-    return (
-      <li>{this.props.supply.item}</li>
-    )
-  }
+function Supplies(props) {
+  return (
+    <li>{props.supply.item}</li>
+  )
 }
 
 export default Supplies

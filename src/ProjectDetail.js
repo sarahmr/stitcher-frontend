@@ -1,22 +1,27 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import Progress from './Progress'
 import Supplies from './Supplies'
 import Cell from './Cell'
-import { withRouter } from "react-router-dom"
+import { withRouter, useHistory } from "react-router-dom"
 import Data from './data.json'
 
-class ProjectDetail extends React.Component {
+function ProjectDetail(props) {
+  let [design, setDesign] = useState(null)
 
-  state = {
-    design: null,
-    cellsCompleted: [],
-    collecting: false,
-    project_id: null
-  }
+  let [cellsCompleted, setCellsCompleted] = useState([])
 
-  componentDidMount(){
-    let id = this.props.match.params.id
-    if (this.props.user) {
+  let [isCollecting, setIsCollecting] = useState(false)
+
+  let [project_id, setProjectId] = useState(null)
+
+  let history = useHistory()
+
+  useEffect(() => {
+    let mounted = true
+    
+    let id = props.match.params.id
+    console.log(id, props.user)
+    if (props.user) {
       fetch(`http://localhost:3001/projects`, {
         method: "GET",
         headers: {
@@ -26,12 +31,11 @@ class ProjectDetail extends React.Component {
       .then(res => res.json())
       .then((projects) => {
         let project = projects.find(project => project.design.id === Number(id)) 
-        if (project) {
-          this.setState({ 
-            design: project.design,
-            cellsCompleted: project.cells,
-            project_id: project.id
-          })
+        console.log(projects)
+        if (project && mounted) {
+          setDesign(project.design)
+          setCellsCompleted(project.cells)
+          setProjectId(project.id)
         }
       })
     }
@@ -39,41 +43,49 @@ class ProjectDetail extends React.Component {
     fetch(`http://localhost:3001/designs/${id}`)
     .then(res => res.json())
     .then((design) => {
-      this.setState({ design })
+      if (mounted) {
+        setDesign(design)
+      }
     })
-    this.interval = setInterval(() => {
-      if (this.state.project_id) {
-      fetch(`http://localhost:3001/projects/${this.state.project_id}`, {
+
+    return () => { mounted = false };
+  }, [])
+
+  useEffect(() => {
+    let interval = setInterval(() => {
+      if (project_id) {
+      fetch(`http://localhost:3001/projects/${project_id}`, {
         method: "PATCH",
         headers: {
           "Authorization": `Bearer ${localStorage.token}`,
           'content-type': 'application/json'
         },
         body: JSON.stringify({
-          cells: this.state.cellsCompleted
+          cells: cellsCompleted
         })
       })
       .then(res => res.json())
       .then((project) => {
       })
     }}, 5000)
-  }
+    return clearInterval(interval)
+  }, [])
 
-  addToCollection = (cellX, cellY) => {
+  let addToCollection = (cellX, cellY) => {
 
-    let newCells = this.state.cellsCompleted.map((cellArr, x) => cellArr.map((cell, y) => {
+    let newCells = cellsCompleted.map((cellArr, x) => cellArr.map((cell, y) => {
       if (x === cellX && y === cellY){
         let newCell = !cell
         return newCell
       } return cell
     }))
 
-    this.setState({
-      cellsCompleted: newCells
-    })
+    setCellsCompleted(newCells)
   }
 
-  handleAddProject = () => {
+  let handleAddProject = () => {
+    let mounted = true
+
     fetch("http://localhost:3001/projects/", {
       method: "POST",
       headers: {
@@ -81,21 +93,24 @@ class ProjectDetail extends React.Component {
         'content-type': 'application/json'
       },
       body: JSON.stringify({
-        design_id: this.state.design.id,
-        user_id: this.props.user.id
+        design_id: design.id,
+        user_id: props.user.id
       })
     })
     .then(res => res.json())
     .then((obj) => {
-      this.setState({
-        design: obj.design,
-        cellsCompleted: obj.cells
-      })
+      if (mounted) {
+        setDesign(obj.design)
+        setCellsCompleted(obj.cells)
+      }
     })
+    return () => { mounted = false };
   }
 
-  handleDeleteDesign = () => {
-    fetch(`http://localhost:3001/designs/${this.state.design.id}`, {
+  let handleDeleteDesign = () => {
+    let mounted = true
+
+    fetch(`http://localhost:3001/designs/${design.id}`, {
       method: "DELETE",
       headers: {
         "Authorization": `Bearer ${localStorage.token}`
@@ -103,16 +118,20 @@ class ProjectDetail extends React.Component {
     })
     .then(res => res.json())
     .then((obj) => {
-      this.setState({
-        design: null
-      },
-      () => { this.props.history.push('/')})
-      this.props.removeDesign(obj)
+      // callback not supported
+      if (mounted) {
+        setDesign(null)
+        props.removeDesign(obj)
+      }
     })
+    handleRedirect()
+    return () => { mounted = false };
   }
 
-  handleDeleteProject = () => {
-    fetch(`http://localhost:3001/projects/${this.state.project_id}`, {
+  let handleDeleteProject = () => {
+    let mounted = true
+
+    fetch(`http://localhost:3001/projects/${project_id}`, {
       method: "DELETE",
       headers: {
         "Authorization": `Bearer ${localStorage.token}`
@@ -120,22 +139,20 @@ class ProjectDetail extends React.Component {
     })
     .then(res => res.json())
     .then((obj) => {
-      this.setState({
-        design: null,
-        completedCells: [],
-        project_id: null
-      },
-      () => { this.props.history.push('/')})
+      if (mounted) {
+        setDesign(null)
+        setCellsCompleted([])
+        setProjectId(null)
+      }
     })
+
+    handleRedirect()
+    return () => { mounted = false };
   }
 
-  componentWillUnmount(){
-    clearInterval(this.interval)
-  }
-
-  displaySupplies = () => {
+  let displaySupplies = () => {
     let suppliesList = []
-    let design = this.state.design
+    // let design = design
 
     design.cells.flat().forEach(color => { 
       if ( color === "#FDF5E6") {
@@ -148,80 +165,77 @@ class ProjectDetail extends React.Component {
     return suppliesList.map(supply => <Supplies key={supply} supply={Data.supplies[supply]} />)
   }
 
-  handleMouseDown = () => {
-    this.setState({
-        collecting: true
-    })
+  let handleMouseDown = () => {
+    setIsCollecting(true)
   }
 
-  handleMouseUp = () => {
-    this.setState({
-      collecting: false
-    })
+  let handleMouseUp = () => {
+    setIsCollecting(false)
   }
 
-  handleMouseLeave = () => {
-    this.setState({
-      collecting: false
-    })
+  let handleMouseLeave = () => {
+    setIsCollecting(false)
   }
 
-  render(){
-    if (!this.state.design) {
-      return null
-    } 
-    let { title } = this.state.design
-    return (
-      <div className="project-details"> 
-        <div className="design-info">
-          <h2>{title}</h2>
-          <p>Created by: {this.state.design.user.name}</p>
-          <div className="details-buttons">
-            { this.state.cellsCompleted.length > 0 ? <button onClick={this.handleDeleteProject}>Delete Project</button> : null }
-            { this.props.user && this.props.user.id === this.state.design.user.id ? 
-              <button onClick={this.handleDeleteDesign}>Delete Design</button>
-            : null}
-            { this.props.user && !this.state.cellsCompleted.length > 0 ? 
-              <button onClick={this.handleAddProject}>Add to Your Projects</button> : null }
-          </div>
+  let handleRedirect = () => {
+    history.push('/')
+  }
+
+  if (!design) {
+    return null
+  } 
+
+  let { title } = design
+  return (
+    <div className="project-details"> 
+      <div className="design-info">
+        <h2>{title}</h2>
+        <p>Created by: {design.user.name}</p>
+        <div className="details-buttons">
+          { cellsCompleted.length > 0 ? <button onClick={handleDeleteProject}>Delete Project</button> : null }
+          { props.user && props.user.id === design.user.id ? 
+            <button onClick={handleDeleteDesign}>Delete Design</button>
+          : null}
+          { props.user && !cellsCompleted.length > 0 ? 
+            <button onClick={handleAddProject}>Add to Your Projects</button> : null }
         </div>
-        <div className="design-image" onMouseDown={this.handleMouseDown} onMouseUp={this.handleMouseUp} onMouseLeave={this.handleMouseLeave}>
-          {this.state.design.cells.map((cellArr, x) => cellArr.map((cell, y) => {
-            let opacity = 1
-            if (this.state.cellsCompleted.length > 0 && this.state.cellsCompleted[x][y] === true ){
-              opacity = .3
-            }
-            return (
-              <Cell 
-                key={(x + y)}
-                cell={cell}
-                opacity={opacity}
-                collecting={this.state.collecting}
-                changeCollecting={this.changeCollecting}
-                addToCollection={this.addToCollection}
-                x={x}
-                y={y}
-              />
-            )
+      </div>
+      <div className="design-image" onMouseDown={handleMouseDown} onMouseUp={handleMouseUp} onMouseLeave={handleMouseLeave}>
+        {design.cells.map((cellArr, x) => cellArr.map((cell, y) => {
+          let opacity = 1
+          if (cellsCompleted.length > 0 && cellsCompleted[x][y] === true ){
+            opacity = .3
           }
-          ))}
-        </div>
-        <div className="supplies">
-          <h2>Embroidery Thread Supplies:</h2>
-          <ul>
-            {this.displaySupplies()}
-          </ul>
-        </div>
-        { this.state.cellsCompleted.length > 0 ? 
-            <div className="progress">
-            <Progress 
-              cells={this.state.design.cells} 
-              completedCells={this.state.cellsCompleted} />
-            </div> 
-          : null }
-      </div> 
-    )
-  }
+          return (
+            <Cell 
+              key={(x + y)}
+              cell={cell}
+              opacity={opacity}
+              collecting={isCollecting}
+              // changeCollecting={changeCollecting}
+              addToCollection={addToCollection}
+              x={x}
+              y={y}
+            />
+          )
+        }
+        ))}
+      </div>
+      <div className="supplies">
+        <h2>Embroidery Thread Supplies:</h2>
+        <ul>
+          {displaySupplies()}
+        </ul>
+      </div>
+      { cellsCompleted.length > 0 ? 
+          <div className="progress">
+          <Progress 
+            cells={design.cells} 
+            completedCells={cellsCompleted} />
+          </div> 
+        : null }
+    </div> 
+  )
 }
 
 export default withRouter(ProjectDetail)
