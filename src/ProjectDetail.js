@@ -20,7 +20,7 @@ function ProjectDetail(props) {
     let mounted = true
     
     let id = props.match.params.id
-    console.log(id, props.user)
+
     if (props.user) {
       fetch(`http://localhost:3001/projects`, {
         method: "GET",
@@ -102,9 +102,10 @@ function ProjectDetail(props) {
       if (mounted) {
         setDesign(obj.design)
         setCellsCompleted(obj.cells)
+        setProjectId(obj.id)
       }
     })
-    return () => { mounted = false };
+    // return () => { mounted = false };
   }
 
   let handleDeleteDesign = () => {
@@ -125,11 +126,12 @@ function ProjectDetail(props) {
       }
     })
     handleRedirect()
-    return () => { mounted = false };
+    // return () => { mounted = false };
   }
 
   let handleDeleteProject = () => {
     let mounted = true
+    console.log(project_id)
 
     fetch(`http://localhost:3001/projects/${project_id}`, {
       method: "DELETE",
@@ -147,7 +149,7 @@ function ProjectDetail(props) {
     })
 
     handleRedirect()
-    return () => { mounted = false };
+    // return () => { mounted = false };
   }
 
   let displaySupplies = () => {

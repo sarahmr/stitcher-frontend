@@ -1,30 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import NavBar from './NavBar'
 import DesignContainer from './DesignContainer'
 import CreateDesign from './CreateDesign'
-import { Route, Switch, Redirect, withRouter } from 'react-router-dom'
+import { Route, Switch, Redirect, withRouter, useHistory } from 'react-router-dom'
 import UserProjectsContainer from './UserProjectsContainer'
 import ProjectDetail from './ProjectDetail'
 import SignIn from './SignIn'
 import Register from './Register'
 
 
-class Stitcher extends React.Component {
+function Stitcher(props) {
+  let [designs, setDesigns] = useState([])
+  let [currentUser, setCurrentUser] = useState(null)
+  let [projects, setProjects] = useState([])
 
-  state = {
-    designs: [],
-    currentUser: null,
-    projects: []
-  }
+  let history = useHistory()
 
-  componentDidMount(){
+  useEffect(() => {
     fetch("http://localhost:3001/designs")
     .then(res => res.json())
     .then((obj) => {
-      this.setState({
-        designs: obj
-      })
+      setDesigns(obj)
     })
+
     if (localStorage.token) {
       fetch("http://localhost:3001/autologin", {
         headers: {
@@ -34,35 +32,33 @@ class Stitcher extends React.Component {
       .then(res => res.json())
       .then(data => {
         if (!data.error) {
-          this.handleLogin(data)
+          handleLogin(data)
         }
       })
     }
+  }, [])
+
+  // let updateUser = newUser => {
+  //   setCurrentUser(newUser)
+  // }
+
+  let handleLogin = (currentUser) => {
+    setCurrentUser(currentUser)
+    history.push(`/users/${currentUser.username}`)
   }
 
-  updateUser = newUser => {
-    this.setState({ currentUser: newUser })
-  }
-
-  handleLogin = (currentUser) => {
-    this.setState({ currentUser }, 
-      () => { this.props.history.push(`/users/${currentUser.username}`)}
-    )
-  }
-
-  handleLogout = () => {
+  let handleLogout = () => {
     localStorage.removeItem("token")
-    this.setState({ 
-      currentUser: null,
-      projects: []
-    }, () => { this.props.history.push('/')})
+    setCurrentUser(null)
+    setProjects([])
+    history.push('/')
   }
 
-  createNewDesign = (designCells, title) => {
+  let createNewDesign = (designCells, title) => {
     let newDesign = {
       title: title,
       cells: designCells,
-      user_id: this.state.currentUser.id
+      user_id: currentUser.id
     }
 
     fetch("http://localhost:3001/designs", {
@@ -75,19 +71,17 @@ class Stitcher extends React.Component {
     })
     .then(res => res.json())
     .then((newDes) => {
-      this.setState({
-        designs: [...this.state.designs, newDes]
-      },
-      () => { this.props.history.push('/')})
+      setDesigns([...designs, newDes])
+      history.push('/')
     })
   }
 
-  handleUserDisplay = (routerProps) => {
-    if (this.state.currentUser) {
+  let handleUserDisplay = (routerProps) => {
+    if (currentUser) {
       return (
       <UserProjectsContainer
-        user={this.state.currentUser} 
-        projects={this.state.projects}
+        user={currentUser} 
+        projects={projects}
       />
       )
     } else {
@@ -97,39 +91,35 @@ class Stitcher extends React.Component {
     }
   }
 
-  removeDesign = (deletedDesign) => {
-    let modifiedDesigns = this.state.designs.filter(design => design.id !== deletedDesign.id)
-    this.setState({
-      designs: modifiedDesigns
-    })
+  let removeDesign = (deletedDesign) => {
+    let modifiedDesigns = designs.filter(design => design.id !== deletedDesign.id)
+    setDesigns(modifiedDesigns)
   }
 
-  render(){
-    return (
-      <div>
-        <NavBar handleLogout={this.handleLogout} user={this.state.currentUser} />
-        <Switch>
-          <Route path="/designs/:id" render={routeProps => {
-            return <ProjectDetail user={this.state.currentUser} match={routeProps.match} removeDesign={this.removeDesign} />
-          }}
-          />
-          <Route path="/create">
-            <CreateDesign createNewDesign={this.createNewDesign} />
-          </Route>
-          <Route path="/users/:username" render={this.handleUserDisplay}/>
-          <Route path="/login">
-            <SignIn handleLogin={this.handleLogin} />
-          </Route>
-          <Route path="/register">
-            <Register handleLogin={this.handleLogin} />
-          </Route>
-          <Route path="/">
-            <DesignContainer user={this.state.currentUser} designs={this.state.designs} />
-          </Route>
-        </Switch>
-      </div>
-    )
-  }
+  return (
+    <div>
+      <NavBar handleLogout={handleLogout} user={currentUser} />
+      <Switch>
+        <Route path="/designs/:id" render={routeProps => {
+          return <ProjectDetail user={currentUser} match={routeProps.match} removeDesign={removeDesign} />
+        }}
+        />
+        <Route path="/create">
+          <CreateDesign createNewDesign={createNewDesign} />
+        </Route>
+        <Route path="/users/:username" render={handleUserDisplay}/>
+        <Route path="/login">
+          <SignIn handleLogin={handleLogin} />
+        </Route>
+        <Route path="/register">
+          <Register handleLogin={handleLogin} />
+        </Route>
+        <Route path="/">
+          <DesignContainer user={currentUser} designs={designs} />
+        </Route>
+      </Switch>
+    </div>
+  )
 }
 
 

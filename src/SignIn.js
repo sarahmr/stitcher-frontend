@@ -1,19 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-class SignIn extends React.Component {
+function SignIn(props) {
+  let [username, setUsername] = useState('')
+  let [password, setPassword] = useState('')
 
-  state = {
-    username: "",
-    password: ""
-  }
-
-  handleChange = (event) => {
-    this.setState({
-      [event.target.name]: event.target.value
-    })
-  }
-
-  handleSubmit = (event) => {
+  let handleSubmit = (event) => {
     event.preventDefault()
 
     fetch("http://localhost:3001/login", {
@@ -21,45 +12,46 @@ class SignIn extends React.Component {
       headers: {
         "content-type": "application/json"
       },
-      body: JSON.stringify(this.state)
+      body: JSON.stringify({
+        username: username,
+        password: password
+      })
     })
     .then(res => res.json())
     .then( data => {
       let { user } = data
       localStorage.token = data.jwt
-      this.props.handleLogin(user)
+      props.handleLogin(user)
     })
   }
 
-  render(){
-    return (
-      <div className="login-container">
-        <h2>Please Sign In</h2>
-        <form className="login-form" onSubmit={this.handleSubmit}>
-          <div>
-            <label>username:</label>
-            <input 
-              type="text" 
-              name="username" 
-              value={this.state.username} 
-              onChange={this.handleChange} />
-          </div>
-          <div>
-            <label>password:</label>
-            <input 
-              type="password"
-              name="password"
-              value={this.state.password}
-              onChange={this.handleChange}
-            />
-          </div>
-          <div>
-            <button>Submit</button>
-          </div>
-        </form>
-      </div>
-    )
-  }
+  return (
+    <div className="login-container">
+      <h2>Please Sign In</h2>
+      <form className="login-form" onSubmit={ handleSubmit }>
+        <div>
+          <label>username:</label>
+          <input 
+            type="text" 
+            name="username" 
+            value={username} 
+            onChange={evt => setUsername(evt.target.value)} />
+        </div>
+        <div>
+          <label>password:</label>
+          <input 
+            type="password"
+            name="password"
+            value={password}
+            onChange={evt => setPassword(evt.target.value)}
+          />
+        </div>
+        <div>
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+  )
 }
 
 export default SignIn
