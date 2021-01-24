@@ -1,0 +1,237 @@
+$font-family: 'Didact Gothic', sans-serif;
+$custom-yellow: #ffd11a;
+$box-shadow-color: rgba(255,255,255,0.3);
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+%center-display {
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  font-family: $font-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// button styles
+button {
+  border: 2px solid lightgrey;
+  background-color: white;
+  cursor: pointer;
+  font-family: $font-family;
+  font-size: 15px;
+  border-radius: 10px;
+  margin: 5px;
+  width: fit-content;
+  &:hover {
+    box-shadow: 0 2px 4px 0 grey;
+  }
+  &:focus {
+    outline: none;
+    transform: scale(1.20)
+  }
+}
+
+h2 {
+  color: $custom-yellow;
+}
+
+.stitcher-header {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0 0 8px 0 grey;
+  color: $custom-yellow;
+  z-index: 1;
+  background-color: #b3b3e6;
+}
+
+// design creation styling
+.create-area {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "form grid grid" "colors grid grid";
+  margin: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.design.area {
+  display: flex;
+  justify-content: center;
+  grid-area: grid;
+}
+
+.grid {
+  display: flex;
+  width: 280px;
+  height: auto;
+  flex-flow: wrap;
+  background: lightgrey;
+}
+
+.cell {
+  width: 24px;
+  height: 24px;
+  margin: 2px;
+  text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+  display: flex;
+  @extend %center-display;
+}
+
+.row {
+  display: flex;
+}
+
+.pick.colors {
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-flow: wrap;
+  grid-area: colors;
+  align-self: center;
+  justify-content: center;
+}
+
+.color {
+  width: 24px;
+  height: 24px;
+  margin: 2px;
+  border: solid black 1px;
+  border-radius: 20px;
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: none;
+  }
+  &:focus {
+    transform: scale(1.3);
+  }
+}
+
+.create-form {
+  @extend %flex-column;
+  margin: 10px;
+  grid-area: form;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+}
+
+.create-form h2 {
+  margin: 5px;
+}
+
+.create-form div {
+  margin: 10px;
+}
+
+.design-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+  margin: 10px;
+}
+
+.design-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 10px;
+  margin: 10px;
+}
+
+.design-card:hover {
+  transform: scale(1.01)
+}
+
+.design-image {
+  display: flex;
+  width: 280px;
+  height: auto;
+  flex-flow: wrap;
+  grid-area: design-image;
+  background: lightgrey;
+  justify-self: center;
+  align-self: center;
+}
+
+.project-details {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "design-info design-image design-image" 
+    "progress design-image design-image" 
+    "supplies design-image design-image";
+  margin: 25px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.progress {
+  grid-area: progress;
+}
+
+.supplies {
+  grid-area: supplies;
+}
+
+.meter {
+  height: 20px;
+  width: 200px;
+  position: relative;
+  background:  #b3b3b3;
+  -moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 2px;
+	box-shadow: inset 0 -1px 1px $box-shadow-color;
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #00e6b8;
+  box-shadow: 
+    inset 0 2px 9px  $box-shadow-color,
+    inset 0 -2px 6px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.login-form {
+  @extend %flex-column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.login-form div {
+  margin: 5px;
+}
+
+.login-container {
+  @extend %flex-column;
+  @extend %center-display;
+}
+
+.details-buttons {
+  @extend %flex-column;
+}
